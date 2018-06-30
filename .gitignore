@@ -1,0 +1,4 @@
+node_modules/
+
+# extensions to ignore
+*.log
