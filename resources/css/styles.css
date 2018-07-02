@@ -1,124 +1,78 @@
+/*------------------------------------------------*/
+/*Global variables for colors used in website*/
+/*------------------------------------------------*/
+/*@import "./modules/_variables.css";*/
+  /*--tintedWhite: #f4f4f4;*/
+  /*--mainOrange: #e67e22;*/
+  /*--darkerOrange: #c06515;*/
+
+
+/* ----------------------------
+Grid CSS
+---------------------------- */
+@import "../../vendors/css/grid.css";
+
+/* ----------------------------
+ Ioicons to use
+---------------------------- */
+@import "../../vendors/css/ionicons.min.css";
+
 /* ----------------------------
 Basic Setup
 ---------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./modules/_basic-setup.css";
 
-html {
-  background-clip: #fff;
-  color: #555;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
-}
+/*-------------------------------*/
+/*General Links Settings*/
+/*-------------------------------*/
+@import "./modules/_generic-links.css";
 
 /* ----------------------------
 Reusable components
 ---------------------------- */
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-}
+@import "./modules/_grid-row-component.css";
 
 /* ----------------------------
 Header section
 ---------------------------- */
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
+@import "./modules/_header-section.css";
 
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 100px;
-  width: auto;
-  float: left;
-  margin-top: 20px;
-}
-
-.main-nav {
-  float: right;
-  list-style: none;
-  margin-top: 55px;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.main-nav li a:link, .main-nav li a:visited {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 90%;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s;
-  padding: 8px 0;
-}
-
-.main-nav li a:hover, .main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
-}
-
-h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  padding-bottom: 0;
-}
+/*------------------------------*/
+/* Headings */
+/*------------------------------*/
+@import "./modules/_headings.css";
 
 /* ----------------------------
 Button settings
 ---------------------------- */
-.btn:link, .btn:visited {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  transition: all 0.2s;
-}
+@import "./modules/_button-settings.css";
 
-.btn:hover, .btn:active {
-  background-color: #cf6d17;
-}
+/*------------------------------*/
+/*Section Features Setting*/
+/*------------------------------*/
+@import "./modules/_section-features-setting.css";
 
-.btn-full:link, .btn-full:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
-  color: #fff;
-  margin-right: 15px;
-}
+/*-----------------------------*/
+/*Section Features Icons settings*/
+/*-----------------------------*/
+@import "./modules/_section-features-icons.css";
 
-.btn-full:hover, .btn-full:active {
-  border: 1px solid #cf6d17;
-}
+/*-----------------------------------*/
+/*Section Features Paragraph Settings*/
+/*-----------------------------------*/
+@import "./modules/_section-features-paragraphs.css";
 
-.btn-ghost:link, .btn-ghost:visited {
-  border: 1px solid #e67e22;
-  color: #e67e22;
-}
+/*----------------------------------*/
+/*Meal Showcase Section Settings*/
+/*----------------------------------*/
+@import "./modules/_section-meals-showcase.css";
 
-.btn-ghost:hover, .btn-ghost:active {
-  border: 1px solid #cf6d17;
-  color: #fff;
-}
+/*--------------------------*/
+/*How it works Section*/
+/*--------------------------*/
+@import "./modules/_section-steps.css";
+
+/*---------------------------------*/
+/*Cities Section Settings*/
+/*---------------------------------*/
+@import "./modules/_section-cities.css";

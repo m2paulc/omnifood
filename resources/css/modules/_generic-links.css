@@ -1,0 +1,16 @@
+/*-------------------------------*/
+/*General Links Settings*/
+/*-------------------------------*/
+
+a:link, a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid #e67e22;
+  padding-bottom: 1px;
+  transition: all 0.3s;
+}
+
+a:hover, a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}

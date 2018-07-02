@@ -1,0 +1,8 @@
+/*------------------------------------------------*/
+/*Global variables for colors used in website*/
+/*------------------------------------------------*/
+:root {
+  --tintedWhite: #f4f4f4;
+  --mainOrange: #e67e22;
+  --darkerOrange: #c06515;
+}

@@ -1,0 +1,19 @@
+/*----------------------------*/
+/*Section Paragraph Settings*/
+/*----------------------------*/
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
