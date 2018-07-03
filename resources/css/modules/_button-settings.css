@@ -1,7 +1,9 @@
 /* ----------------------------
 Button settings
 ---------------------------- */
-.btn:link, .btn:visited {
+.btn:link, 
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -10,11 +12,16 @@ Button settings
   transition: all 0.2s;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, 
+.btn:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #c06515;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, 
+.btn-full:visited,
+input[type=submit] {
   background-color: #e67e22;
   border: 1px solid transparent;
   color: #fff;
@@ -22,7 +29,9 @@ Button settings
   transition: all 0.2s;
 }
 
-.btn-full:hover, .btn-full:active {
+.btn-full:hover, 
+.btn-full:active,
+input[type=submit] {
   border: 1px solid #c06515;
 }
 
