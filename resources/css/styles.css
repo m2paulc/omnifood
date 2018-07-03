@@ -81,3 +81,8 @@ Button settings
 /*Testimonials Settings*/
 /*--------------------------------*/
 @import "./modules/_section-testimonials.css";
+
+/*-------------------------------*/
+/*Sign Up Plans Section Settings*/
+/*-----------------------------*/
+@import "./modules/_section-plans.css";
