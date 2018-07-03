@@ -76,3 +76,8 @@ Button settings
 /*Cities Section Settings*/
 /*---------------------------------*/
 @import "./modules/_section-cities.css";
+
+/*--------------------------------*/
+/*Testimonials Settings*/
+/*--------------------------------*/
+@import "./modules/_section-testimonials.css";

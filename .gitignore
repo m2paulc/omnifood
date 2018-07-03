@@ -1,6 +1,8 @@
 node_modules/
 .tmp/
 .cache/
+dist/
+public/
 
 # extensions to ignore
 *.log
