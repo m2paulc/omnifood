@@ -90,3 +90,8 @@ Button settings
 /*Form Section*/
 /*---------------------------------*/
 @import "./modules/_section-form.css";
+
+/* -------------------------------
+Footer Section Page Setting
+------------------------------- */
+@import "./modules/_section-footer.css";
