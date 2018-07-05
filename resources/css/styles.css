@@ -75,3 +75,18 @@ Button settings
 /*Cities Section Settings*/
 /*---------------------------------*/
 @import "./modules/_section-cities.css";
+
+/*--------------------------------*/
+/*Testimonials Settings*/
+/*--------------------------------*/
+@import "./modules/_section-testimonials.css";
+
+/*-------------------------------*/
+/*Sign Up Plans Section Settings*/
+/*-----------------------------*/
+@import "./modules/_section-plans.css";
+
+/*---------------------------------*/
+/*Form Section*/
+/*---------------------------------*/
+@import "./modules/_section-form.css";
