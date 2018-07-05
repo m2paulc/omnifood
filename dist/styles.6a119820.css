@@ -706,13 +706,14 @@ Basic Setup
   box-sizing: border-box;
 }
 
-html {
+html, body {
   background-clip: #fff;
   color: #555;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -767,6 +768,14 @@ header {
   width: auto;
   float: left;
   margin-top: 20px;
+} 
+
+.logo-black {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+  display: none;
 }
 
 .main-nav {
@@ -780,7 +789,8 @@ header {
   margin-left: 40px;
 }
 
-.main-nav li a:link, .main-nav li a:visited {
+.main-nav li a:link, 
+.main-nav li a:visited {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -793,7 +803,28 @@ header {
 .main-nav li a:hover, .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
-/*------------------------------*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .main-nav {
+  margin-top: 18px;
+}
+
+.sticky .main-nav li a:link, 
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 16px 0;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }/*------------------------------*/
 /* Headings */
 /*------------------------------*/
 
@@ -1242,6 +1273,11 @@ footer p {
   /*--tintedWhite: #f4f4f4;*/
   /*--mainOrange: #e67e22;*/
   /*--darkerOrange: #c06515;*/
+
+/* ---------------------------------
+Media Queries Settings
+--------------------------------- */
+/* @import "./modules/queries.css"; */
 
 /* ----------------------------
 Grid CSS

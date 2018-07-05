@@ -259,7 +259,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../../vendors/css/grid.css":74,"../../vendors/css/ionicons.min.css":75,"./modules/_basic-setup.css":76,"./modules/_generic-links.css":77,"./modules/_grid-row-component.css":78,"./modules/_header-section.css":58,"./modules/_headings.css":80,"./modules/_button-settings.css":60,"./modules/_section-features-setting.css":82,"./modules/_section-features-icons.css":83,"./modules/_section-features-paragraphs.css":84,"./modules/_section-meals-showcase.css":85,"./modules/_section-steps.css":86,"./modules/_section-cities.css":87,"./modules/_section-testimonials.css":68,"./modules/_section-plans.css":67,"./modules/_section-form.css":69,"./modules/_section-footer.css":95,"_css_loader":99}],92:[function(require,module,exports) {
+},{"../../vendors/css/grid.css":74,"../../vendors/css/ionicons.min.css":75,"./modules/_basic-setup.css":76,"./modules/_generic-links.css":77,"./modules/_grid-row-component.css":78,"./modules/_header-section.css":58,"./modules/_headings.css":80,"./modules/_button-settings.css":60,"./modules/_section-features-setting.css":82,"./modules/_section-features-icons.css":83,"./modules/_section-features-paragraphs.css":84,"./modules/_section-meals-showcase.css":85,"./modules/_section-steps.css":86,"./modules/_section-cities.css":87,"./modules/_section-testimonials.css":68,"./modules/_section-plans.css":67,"./modules/_section-form.css":69,"./modules/_section-footer.css":95,"_css_loader":99}],81:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -288,7 +288,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58005' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52324' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -508,4 +508,4 @@ LazyPromise.prototype.catch = function (onError) {
 };
 },{"./bundle-url":124}],0:[function(require,module,exports) {
 var b=require(143);b.load([["ionicons.12666f4b.eot",128],["ionicons.c932633f.ttf",129],["ionicons.9b3c266c.woff",130],["ionicons.44a62c50.svg",131],["hero.fcfa819a.jpg",125],["back-customers.4b4a4054.jpg",89]]);
-},{}]},{},[92,0], null)
+},{}]},{},[81,0], null)

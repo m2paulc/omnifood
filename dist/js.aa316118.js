@@ -104,10 +104,86 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({38:[function(require,module,exports) {
-// import 'normalize.css';
+$(document).ready(function () {
 
-// document.write(new Date());
-},{}],92:[function(require,module,exports) {
+    /* For the sticky navigation */
+    $('.js--section-features').waypoint(function (direction) {
+        if (direction == "down") {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+    }, {
+        offset: '60px;'
+    });
+
+    /* Scroll on buttons */
+    $('.js--scroll-to-plans').click(function () {
+        $('html, body').animate({ scrollTop: $('.js--section-plans').offset().top }, 1000);
+    });
+
+    $('.js--scroll-to-start').click(function () {
+        $('html, body').animate({ scrollTop: $('.js--section-features').offset().top }, 1000);
+    });
+
+    /* Navigation scroll */
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+    /* Animations on scroll */
+    $('.js--wp-1').waypoint(function (direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-2').waypoint(function (direction) {
+        $('.js--wp-2').addClass('animated fadeInUp');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-3').waypoint(function (direction) {
+        $('.js--wp-3').addClass('animated fadeIn');
+    }, {
+        offset: '50%'
+    });
+
+    $('.js--wp-4').waypoint(function (direction) {
+        $('.js--wp-4').addClass('animated pulse');
+    }, {
+        offset: '50%'
+    });
+
+    /* Mobile navigation */
+    $('.js--nav-icon').click(function () {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i');
+
+        nav.slideToggle(200);
+
+        if (icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        } else {
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+    });
+});
+},{}],81:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -136,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58005' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52324' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -277,5 +353,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[92,38], null)
+},{}]},{},[81,38], null)
 //# sourceMappingURL=/js.aa316118.map
