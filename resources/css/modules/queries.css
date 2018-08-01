@@ -17,6 +17,8 @@
     width: 100%;
     padding: 0 2%;
   }
+  
+  .main-nav { display: block; }
 
   .long-copy {
     width: 80%;
