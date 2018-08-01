@@ -15,11 +15,11 @@ $(document).ready(function() {
   
   /* Scroll on buttons */
   $('.scroll-to-plans').click(function () {
-     $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
+     $('html, body').animate({scrollTop: $('.section-plans').offset().top}, 1000); 
   });
   
   $('.scroll-to-start').click(function () {
-     $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
+     $('html, body').animate({scrollTop: $('.section-features').offset().top}, 1000); 
   });
   
   
@@ -41,26 +41,26 @@ $(document).ready(function() {
   
   
   /* Animations on scroll */
-  $('.js--wp-1').waypoint(function(direction) {
-      $('.js--wp-1').addClass('animated fadeIn');
+  $('.wp-1').waypoint(function(direction) {
+      $('.wp-1').addClass('animated fadeIn');
   }, {
       offset: '50%'
   });
   
-  $('.js--wp-2').waypoint(function(direction) {
-      $('.js--wp-2').addClass('animated fadeInUp');
+  $('.wp-2').waypoint(function(direction) {
+      $('.wp-2').addClass('animated fadeInUp');
   }, {
       offset: '50%'
   });
   
-  $('.js--wp-3').waypoint(function(direction) {
-      $('.js--wp-3').addClass('animated fadeIn');
+  $('.wp-3').waypoint(function(direction) {
+      $('.wp-3').addClass('animated fadeIn');
   }, {
       offset: '50%'
   });
   
-  $('.js--wp-4').waypoint(function(direction) {
-      $('.js--wp-4').addClass('animated pulse');
+  $('.wp-4').waypoint(function(direction) {
+      $('.wp-4').addClass('animated pulse');
   }, {
       offset: '50%'
   });
