@@ -9,7 +9,7 @@ input[type=submit] {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in;
 }
 
 .btn:hover, 
@@ -33,6 +33,7 @@ input[type=submit] {
 .btn-full:active,
 input[type=submit] {
   border: 1px solid #c06515;
+  background-color: #c06515;
 }
 
 .btn-ghost:link, .btn-ghost:visited {
